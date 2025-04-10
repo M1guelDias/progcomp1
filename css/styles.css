@@ -1,41 +1,49 @@
-body {
-    font-family: Arial, sans-serif; /* fonte */
-    display: flex; /* usa o FlexBox para exibir o conteúdo */
-    justify-content: center; /* centraliza na horizontal */
-    height: 100vh; /* altura da página é todo o conteúdo dela */
-    align-items: center; /* centraliza na vertical */
-    background-color: cyan;
+body{
+    font-family: Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eeecec;
+    text-align:center;
 }
-.container {
-    background-color: white;
-    padding: 20px; /* espaçamento interno */
-    border-radius: 10px; /* bordas arredondadas */
-    /* sombreamento 4px (horizontal) 8px (vertical) */
-    box-shadow: 4px 8px; 
-    text-align: center; /* centraliza texto */
+header {
+    background-color: rgb(123, 121, 126);
+    padding: 15px 0px;
+
+}
+nav{
+    background-color: rgb(11, 11, 11);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}   
+
+#linksmenu{
+    display: flex;
+    gap: 20px;
+
 }
 
-h2 {
-   padding: 5px;
-}
-
-button {
-    background-color: blue;
+nav a{
     color: white;
-    border: none;
-    padding: 5px; /* espaçamento interno */
-    border-radius: 5px; /* bordas arredondadas */
-    cursor: pointer; /* mouse vira um ponteiro */
+    text-decoration:none;
+    padding: 10px 15px;
+    font-size: 10px;
+    background-color: rgb(123, 121, 126);
+    border-radius: 5px;
 }
+#img{
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 5px 5px gray
+;
 
-/* cria efeito de passar o mouse no botão */
-button:hover {
-    background-color: red;
 }
-
-.imagem {
-    border-radius: 50%;
-    width: 100px; /* largura */
-    height: 100px; /* altura */
-    margin-bottom: 10px; /* espaçamento externo */
+.container{
+    width: 80%;
+   background: white;
+   border-radius: 16px;
+   margin: 20px auto;
+   padding: 5px;
 }
