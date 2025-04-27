@@ -1,91 +1,138 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0; /* espaçamento externo da página */
-    padding: 0; /* espaçamento interno da página */
-    background-color: #f4f4f4;
-    text-align: center; /* texto centralizado */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  text-align: center;
+  color: #333;
 }
+
 header {
-    background-color: #28a745;
-    color: white;
-    /* 15px (espaçamento interno acima e abaixo) e 0px (direita e esquerda)*/
-    padding: 15px 0px;
-    font-size: 24px; 
+  background-color: #28a745;
+  color: white;
+  padding: 15px 0;
+  font-size: 24px;
 }
+
 nav {
-    background: #007bff;
-    padding: 10px; /* espaçamento interno do menu */
-    display: flex; /* Flex Boxing */
-    justify-content: space-between; /* espaço entre os elementos do menu*/
-    align-items: center; /* alinhamento na vertical */
+  background: #007bff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-#links-menu{
-    display: flex;
-    gap: 20px; /* distância entre os itens do menu*/
+
+#links-menu {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
 }
-nav a { /* configura os links do menu */
-    color: white;
-    text-decoration: none; /* não decora os links */
-    padding: 10px 15px; /* (10px acima e abaixo) (15px é esquerda e direita)*/
-    font-size: 18px;
-    background: #0056b3;
-    border-radius: 5px; /* cantos arredondados */
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  font-size: 16px;
+  background: #0056b3;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background: #004080;
 }
 
 img {
-    width: 120px;
-    height: auto;
-    margin-right: 80px; /* espaçamento externo à direita */
-    border-radius: 10px;
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 8px;
 }
 
 .container {
-    width: 80%; /* largura de 80% da largura da página */
-    background: white;
-    border-radius: 10px;
-    /* espaçamento externo 20px acima e abaixo */
-    /* espaçamento externo auto à direita e à esquerda */
-    margin: 20px auto;
-    padding: 20px; /* espaçamento interno */ 
-    text-align: justify;
+  width: 85%;
+  max-width: 1000px;
+  background: white;
+  border-radius: 8px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: justify;
+  border: 1px solid #ccc;
 }
-h2 {
-    text-align: center;
+
+h2, h4 {
+  text-align: center;
+  color: #0056b3;
+  margin-top: 15px;
 }
 
 ol li {
-    padding-bottom: 10px;
-}
-
-table tr td {
-    padding: 20px;
+  padding-bottom: 8px;
+  line-height: 1.5;
 }
 
 table {
-    margin: 0 auto; /* centraliza a tabela na página */
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+  background: #fafafa;
 }
 
-.laranja {
-    background-color: orange;
-}
-.preta {
-    background-color: black;
-    color: white;
-}
-.roxa {
-    background-color: purple;
-}
-.verde {
-    background-color: green;
-}
-.vermelha {
-    background-color: red;
-}
-.azul {
-    background-color: navy;
-    color: white;
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 14px;
 }
 
-.campos {
-    margin-bottom: 20px;
+th {
+  background-color: #003d80;
+  color: white;
+}
+
+.laranja, .preta, .roxa, .verde, .vermelha {
+  font-weight: bold;
+}
+
+.laranja { background-color: #f4b183; }
+.preta { background-color: #000; color: white; }
+.roxa { background-color: #c9b2d8; }
+.verde { background-color: #c6e0b4; }
+.vermelha { background-color: #f4cccc; }
+
+.escala, .importante {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  max-width: 800px;
+  border: 1px solid #ccc;
+  text-align: justify;
+}
+
+.escala {
+  background-color: #e6f0fa;
+}
+
+.importante {
+  background-color: #fff2cc;
+  border-color: #e6b800;
+}
+
+.cor-laranja { background-color: #ffc000; }
+.cor-preta { background-color: #000000; color: white; }
+.cor-roxa { background-color: #7030a0; color: white; }
+.cor-verde { background-color: #00b050; color: white; }
+.cor-vermelha { background-color: #c00000; color: white; }
+
+@media (max-width: 768px) {
+  nav {
+      flex-direction: column;
+      text-align: center;
+  }
+  #links-menu {
+      flex-direction: column;
+      align-items: center;
+  }
 }
